@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:handlers="clr-namespace:Licenta.Handlers"
+             x:Class="Licenta.Register"
+             Title="Register">
+
+    <ScrollView>
+        <VerticalStackLayout 
+        
+         Spacing="20" 
+         Padding="60,0" 
+         VerticalOptions="Center">
+
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Adauga datele pentru cazarea la camin" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center" />
+            </VerticalStackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="user.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="NameEntry" Placeholder="Nume" Keyboard="Nume" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="user.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="PrenumeEntry" Placeholder="Prenume" Keyboard="Prenume" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="toilet.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <Picker x:Name="Gen" Title="Gen" Margin="20,0,0,0" VerticalOptions="Center">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Feminin</x:String>
+                                <x:String>Masculin</x:String>
+
+                            </x:Array>
+                        </Picker.ItemsSource>
+
+                    </Picker>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="adress.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="AdresaEntry" Placeholder="Adresa" Keyboard="Adresa" />
+                </Frame>
+            </StackLayout>
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="location.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+
+                    <Picker x:Name="Judet" Title="Judet" Margin="20,0,0,0" VerticalOptions="Center">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>ARAD</x:String>
+                                <x:String>ARGES</x:String>
+                                <x:String>BACAU</x:String>
+                                <x:String>BIHOR</x:String>
+                                <x:String>BISTRITA NASAUD</x:String>
+                                <x:String>BOTOSANI</x:String>
+                                <x:String>BRAILA</x:String>
+                                <x:String>BRASOV</x:String>
+                                <x:String>BUZAU</x:String>
+                                <x:String>CALARASI</x:String>
+                                <x:String>CARAS SEVERIN</x:String>
+                                <x:String>CLUJ</x:String>
+                                <x:String>CONSTANTA</x:String>
+                                <x:String>COVASNA</x:String>
+                                <x:String>DAMBOVITA</x:String>
+                                <x:String>DOLJ</x:String>
+                                <x:String>GALATI</x:String>
+                                <x:String>GIURGIU</x:String>
+                                <x:String>GORJ</x:String>
+                                <x:String>HARGHITA</x:String>
+                                <x:String>HUNEDOARA</x:String>
+                                <x:String>IALOMITA</x:String>
+                                <x:String>IASI</x:String>
+                                <x:String>ILFOV</x:String>
+                                <x:String>MARAMURES</x:String>
+                                <x:String>MEHEDINTI</x:String>
+                                <x:String>MURES</x:String>
+                                <x:String>NEAMT</x:String>
+                                <x:String>OLT</x:String>
+                                <x:String>PRAHOVA</x:String>
+                                <x:String>SALAJ</x:String>
+                                <x:String>SATU MARE</x:String>
+                                <x:String>SIBIU</x:String>
+                                <x:String>SUCEAVA</x:String>
+                                <x:String>TELEORMAN</x:String>
+                                <x:String>TIMIS</x:String>
+                                <x:String>TULCEA</x:String>
+                                <x:String>VALCEA</x:String>
+                                <x:String>VASLUI</x:String>
+                                <x:String>VRANCEA</x:String>
+                                
+                            </x:Array>
+                        </Picker.ItemsSource>
+                        
+                    </Picker>
+                    
+                    
+                </Frame>
+            </StackLayout>
+            
+            
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="id.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="CnpEntry" Placeholder="CNP" Keyboard="CNP" />
+                </Frame>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="id.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="SerieCIEntry" Placeholder="SerieCI" Keyboard="SerieCI" />
+                </Frame>
+            </StackLayout>
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="id.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="NrCIEntry" Placeholder="NrCI" Keyboard="NrCI" />
+                </Frame>
+            </StackLayout>
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="mother.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="NumeMamaEntry" Placeholder="NumeMama" Keyboard="NumeMama" />
+                </Frame>
+            </StackLayout>
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="father.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="NumeTataEntry" Placeholder="NumeTata" Keyboard="NumeTata" />
+                </Frame>
+            </StackLayout>
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="graduation.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+
+                    <Picker x:Name="Facultate" Title="Facultate" Margin="20,0,0,0" VerticalOptions="Center">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Facultatea de Automatica si Calculatoare</x:String>
+                                <x:String>Facultatea de Arhitectura</x:String>
+                                <x:String>Facultatea de Constructii</x:String>
+                                <x:String>Facultatea de Chimie</x:String>
+                                <x:String>Facultatea de Electrotehnica si Electroenrgetica</x:String>
+                                <x:String>Facultatea de Electronica</x:String>
+                                <x:String>Facultatea de Mecanica</x:String>
+                                <x:String>Facultatea de Management in productia transporturilor</x:String>
+                                <x:String>Facultatea de Stinte ale Comunicarii</x:String>
+                                
+                            </x:Array>
+                        </Picker.ItemsSource>
+
+                    </Picker>
+
+                </Frame>
+            </StackLayout>
+
+
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="graduation.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+
+
+                    <Picker x:Name="AnStudiu" Title="AnStudiu" Margin="20,0,0,0" VerticalOptions="Center">
+                        <Picker.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>1</x:String>
+                                <x:String>2</x:String>
+                                <x:String>3</x:String>
+                                <x:String>4</x:String>
+                                <x:String>5</x:String>
+                                <x:String>6</x:String>
+
+                            </x:Array>
+                        </Picker.ItemsSource>
+
+                    </Picker>
+                </Frame>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="graduation.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="SpecializareaEntry" Placeholder="Specializarea" Keyboard="Specializarea" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="user.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="NrMatricolEntry" Placeholder="NrMatrico" Keyboard="NrMatricol" />
+                </Frame>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="phone.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="TelefonParinteEntry" Placeholder="TelefonParinte" Keyboard="TelefonParinte" />
+                </Frame>
+            </StackLayout>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="phone.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="TelefonStudentEntry" Placeholder="TelefonStudent" Keyboard="TelefonStudent" />
+                </Frame>
+            </StackLayout>
+
+            
+            <StackLayout Orientation="Horizontal">
+                <Frame ZIndex="1" HasShadow="True" BorderColor="White" HeightRequest="56" WidthRequest="56" CornerRadius="28">
+                    <Image Source="key.png" HeightRequest="20" WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45" Margin="-20,0,0,0" Padding="0" HasShadow="True" BorderColor="White"  HorizontalOptions="FillAndExpand">
+                    <handlers:BorderlessEntry Text="{Binding Email}" Margin="20,0,0,0" VerticalOptions="Center" x:Name="NrCameraEntry" Placeholder="NrCamera" Keyboard="NrCamera" />
+                </Frame>
+            </StackLayout>
+
+
+            
+                <Button Text="Adauga date" Clicked="Button_Clicked_1"  WidthRequest="100" CornerRadius="20" HorizontalOptions="Center" />
+
+               
+            
+            
+        </VerticalStackLayout>
+
+
+        
+
+    </ScrollView>
+
+</ContentPage>
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Licenta.AddStudentPage"
+              BackgroundColor="{DynamicResource PageBackgroundColor}"
+             Title="AddStudentPage">
+
+    <ScrollView>
+        <StackLayout Margin="20">
+            <Entry Placeholder="Nume" x:Name="NameEntry" />
+            <Entry Placeholder="Prenume" x:Name="PrenumeEntry" />
+            <Entry Placeholder="Adresa" x:Name="AdresaEntry" />
+            <Entry Placeholder="CNP" x:Name="CnpEntry" />
+            <Entry Placeholder="Serie CI" x:Name="SerieCiEntry" />
+            <Entry Placeholder="Nr CI" x:Name="NrCiEntry" />
+            <Entry Placeholder="Nume Mama" x:Name="NumeMamaEntry" />
+            <Entry Placeholder="Nume Tata" x:Name="NumeTataEntry" />
+            <Entry Placeholder="Facultatea" x:Name="FacultateaEntry" />
+            <Entry Placeholder="An Studiu" x:Name="AnStudiuEntry" Keyboard="Numeric" />
+            <Entry Placeholder="Specializarea" x:Name="SpecializareaEntry" />
+            <Entry Placeholder="Telefon Parinte" x:Name="TelefonParinteEntry" />
+            <Entry Placeholder="Telefon Student" x:Name="TelefonStudentEntry" />
+            <Entry Placeholder="Gen" x:Name="GenEntry" />
+            <Entry Placeholder="Nr Matricol" x:Name="NrMatricolEntry" />
+            <Entry Placeholder="Judet" x:Name="JudetEntry" />
+            <Button Text="Save" Clicked="OnSaveClicked" />
+        </StackLayout>
+    </ScrollView>
+
+
+    
+</ContentPage>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Licenta.DisplayPage"
+             Title="DisplayPage">
+
+
+
+       
+
+        <Grid BackgroundColor="Lavender">
+
+            
+
+            <Frame CornerRadius="30" BackgroundColor="White" Padding="100" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout>
+
+                <StackLayout Orientation="Horizontal" >
+                    <Image Source="visitor.png" WidthRequest="100" HeightRequest="100" Aspect="AspectFit" />
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Spacing="10" >
+                        <Label Text="Nume: " />
+                        <Label Text="{Binding nume}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="Prenume: " />
+                        <Label Text="{Binding prenume}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Gen: " />
+                        <Label Text="{Binding selected_gen}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Adresa: " />
+                        <Label Text="{Binding adresa}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Judet: " />
+                        <Label Text="{Binding selected_Judet}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="CNP: " />
+                        <Label Text="{Binding cNP}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="SerieCI: " />
+                        <Label Text="{Binding serieCI}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Numar CI: " />
+                        <Label Text="{Binding numarCI}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Nume Mama: " />
+                        <Label Text="{Binding numeMama}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Nume Tata: " />
+                        <Label Text="{Binding numeTata}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Telefon Student: " />
+                        <Label Text="{Binding telefonStudent}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Telefon Parinte: " />
+                        <Label Text="{Binding telefonParinte}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Nr Matricol: " />
+                        <Label Text="{Binding nrMatricol}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Nr Camera: " />
+                        <Label Text="{Binding nrCamera}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Facultate: " />
+                        <Label Text="{Binding selected_Facultate}" />
+                    </StackLayout>
+
+
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="Specializare: " />
+                        <Label Text="{Binding specializare}" />
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" BackgroundColor="White">
+                        <Label Text="An Studiu: " />
+                        <Label Text="{Binding selected_an_studiu}" />
+                    </StackLayout>
+
+                </StackLayout>
+            </Frame>
+        </Grid>
+ 
+
+</ContentPage>
